@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Matched Pages</h1>
+
+
+            <a href="{% url 'title' matches %}"><li>{{ matches|safe }}</li></a>
+
+
+{% endblock %}
